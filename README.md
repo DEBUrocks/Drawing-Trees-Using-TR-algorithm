@@ -3,10 +3,13 @@
 
 #Ubuntu
 First Install OpenGL -> sudo apt-get install freeglut3-dev
+
 Compile Using        -> g++ main.cpp linecircle.cpp tidieralgo.cpp -lglut -lGL -lGLU 
+
 Run                  -> ./a.out
 
 #Windows
+
 Follow the Steps Given here: https://www.geeksforgeeks.org/getting-started-with-opengl/
 
 Neat Trees using TR Algorithm Rendered using OpenGL
