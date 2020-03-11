@@ -2,6 +2,7 @@
 
 
 #Ubuntu
+
 First Install OpenGL -> sudo apt-get install freeglut3-dev
 
 Compile Using        -> g++ main.cpp linecircle.cpp tidieralgo.cpp -lglut -lGL -lGLU 
