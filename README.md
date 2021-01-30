@@ -1,7 +1,7 @@
 # Drawing-Trees-Using-TR-algorithm
 
 
-#Ubuntu
+# Ubuntu
 
 First Install OpenGL -> sudo apt-get install freeglut3-dev
 
@@ -9,7 +9,7 @@ Compile Using        -> g++ main.cpp linecircle.cpp tidieralgo.cpp -lglut -lGL -
 
 Run                  -> ./a.out
 
-#Windows
+# Windows
 
 Follow the Steps Given here: https://www.geeksforgeeks.org/getting-started-with-opengl/
 
@@ -17,12 +17,12 @@ Neat Trees using TR Algorithm Rendered using OpenGL
 
 @mainpage Results, Issues and Analysis
 
-##Made By:
-###1. Debmeet Banerjee     2018A7PS0385H 
-###2. Anirudh Sood         2018A7PS0673H
-###3. Sri Chand Gamguri    2017A7PS0272H
+## Made By:
+### 1. Debmeet Banerjee     2018A7PS0385H 
+### 2. Anirudh Sood         2018A7PS0673H
+### 3. Sri Chand Gamguri    2017A7PS0272H
 
-##Simplifying The TR Algorithm---
+## Simplifying The TR Algorithm---
 
 "Tidier drawings of trees"-drawings using  as little space as possible while satisfying certain aesthetics-
 
@@ -43,7 +43,7 @@ Goal:2 subtrees of a node should be formed independently, and then placed as clo
      
 
 
-##Procedure:
+## Procedure:
 
 Work is done by recursive postorder traversal procedure. During the traversal the procedure performs three tasks at each node T: 
 
@@ -52,10 +52,10 @@ Work is done by recursive postorder traversal procedure. During the traversal th
 3. it inserts a thread if one is required.
 
 			
-##Detailed Procedure:
+## Detailed Procedure:
 
 
-###Task 1: Done using While Loop: It scans down the right contour of the left subtree and the left contour of the right subtree of selected node T, 
+### Task 1: Done using While Loop: It scans down the right contour of the left subtree and the left contour of the right subtree of selected node T, 
 
 															computing the distance between them,
 
@@ -74,7 +74,7 @@ Work is done by recursive postorder traversal procedure. During the traversal th
 															(this information is needed to compute offsets of threaded nodes)
 
 
-###Task 2 : keeping track of the leftmost and rightmost nodes on the lowest level of the subtree; only these nodes are threaded if needed. 
+### Task 2 : keeping track of the leftmost and rightmost nodes on the lowest level of the subtree; only these nodes are threaded if needed. 
 
 Information of extreme descendants are stored in this format:
 ADDR : LINK;									(* address *)
@@ -82,7 +82,7 @@ OFF : INTEGER;								(* offset from root of subtree *)
 LEV : INTEGER									(* tree level *)
 
 
-###Task 3 : Threading, is needed only if the subtrees joined at the current node have different heights and neither is empty. 
+### Task 3 : Threading, is needed only if the subtrees joined at the current node have different heights and neither is empty. 
 
  			   The thread is stored in the left link field if the node to which it points is to its left, and in the right link field otherwise; 
 
@@ -94,14 +94,14 @@ SETUP     :  Procedure SETUP assigns relative x coordinates to all nodes during 
 PETRIFY  :  Procedure PETRIFY converts relative positionings to absolute coordinates and erases the threads.
 
 
-##Issues Faced While Doing the Assignment
+## Issues Faced While Doing the Assignment
 
 1. Unfamiliarity with OpenGL, leading to various issues(flickering, random points displayed etc)
 2. Clearing the input buffer bit by mistake
 3. Not setting different colors for foreground and background resulting in blank screen
 4. Issues in understanding how the code needs to be commented for Doxygen to run properly
 
-##Help Taken from
+## Help Taken from
 1. Various Google searches
 2. Few snippets of code from StackOverflow ,GeeksForGeeks 
 3. Some funcions from a GitHub repository
